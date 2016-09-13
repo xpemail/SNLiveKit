@@ -1,12 +1,13 @@
 //
 //  ViewController.m
-//  TestLiveKit
+//  LFLiveKitDemo
 //
-//  Created by 吴贤德 on 16/9/13.
-//  Copyright © 2016年 Soooner. All rights reserved.
+//  Created by admin on 16/8/30.
+//  Copyright © 2016年 admin. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "LFLivePreview.h"
 
 @interface ViewController ()
 
@@ -17,11 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+     [self.view addSubview:[[LFLivePreview alloc] initWithFrame:self.view.bounds]];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskLandscape;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return YES;
 }
 
 @end

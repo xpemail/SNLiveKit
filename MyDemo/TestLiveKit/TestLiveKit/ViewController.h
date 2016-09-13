@@ -1,9 +1,9 @@
 //
 //  ViewController.h
-//  TestLiveKit
+//  LFLiveKitDemo
 //
-//  Created by 吴贤德 on 16/9/13.
-//  Copyright © 2016年 Soooner. All rights reserved.
+//  Created by admin on 16/8/30.
+//  Copyright © 2016年 admin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
