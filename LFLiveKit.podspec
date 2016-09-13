@@ -1,8 +1,8 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "LFLiveKit"
-  s.version      = "2.3"
+  s.name         = "SNLiveKit"
+  s.version      = "2.3.1"
   s.summary      = "Base On LFLiveKit. support soooner transport lib later by xd.5"
   s.homepage     = "https://github.com/chenliming777"
   s.license      = { :type => "MIT", :file => "LICENSE" }
