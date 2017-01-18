@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SNLiveKit"
-  s.version      = "2.3.1"
+  s.version      = "2.6.0"
   s.summary      = "Base On LFLiveKit. support soooner transport lib later by xd.5"
   s.homepage     = "https://github.com/chenliming777"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -17,7 +17,4 @@ Pod::Spec.new do |s|
   s.libraries = "c++", "z"
 
   s.requires_arc = true
-  s.ios.vendored_frameworks = 'Vendor/GPUImage.framework','Vendor/pili-librtmp.framework'
-  #s.dependency 'LMGPUImage'
-  #s.dependency 'pili-librtmp', '1.0.3.1'
 end
