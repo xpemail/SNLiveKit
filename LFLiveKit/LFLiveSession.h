@@ -127,6 +127,9 @@ typedef NS_ENUM(NSInteger,LFLiveCaptureTypeMask) {
 /* The saveLocalVideoPath is save the local video  path */
 @property (nonatomic, strong, nullable) NSURL *saveLocalVideoPath;
 
+#pragma mark - 加这个属性用于获取图片
+@property(nonatomic , assign) CVPixelBufferRef pixelBuffer;
+
 #pragma mark - Initializer
 ///=============================================================================
 /// @name Initializer
