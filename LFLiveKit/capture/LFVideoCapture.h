@@ -14,6 +14,9 @@
 /** LFVideoCapture callback videoData */
 @protocol LFVideoCaptureDelegate <NSObject>
 - (void)captureOutput:(nullable LFVideoCapture *)capture pixelBuffer:(nullable CVPixelBufferRef)pixelBuffer;
+
+#pragma mark - 加个代理用于获取图片
+- (void)getImageFromFramebuffer:(nullable CVPixelBufferRef)pixelBuffer;
 @end
 
 @interface LFVideoCapture : NSObject

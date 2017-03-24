@@ -276,6 +276,10 @@
         if (pixelBuffer && _self.delegate && [_self.delegate respondsToSelector:@selector(captureOutput:pixelBuffer:)]) {
             [_self.delegate captureOutput:_self pixelBuffer:pixelBuffer];
         }
+#pragma mark - 加个代理 用于获取图片
+        if (pixelBuffer && _self.delegate && [_self.delegate respondsToSelector:@selector(getImageFromFramebuffer:)]) {
+            [_self.delegate getImageFromFramebuffer:pixelBuffer];
+        }
     }
 }
 

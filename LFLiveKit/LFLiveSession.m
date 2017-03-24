@@ -138,7 +138,10 @@
 - (void)captureOutput:(nullable LFVideoCapture *)capture pixelBuffer:(nullable CVPixelBufferRef)pixelBuffer {
     if (self.uploading) [self.videoEncoder encodeVideoData:pixelBuffer timeStamp:NOW];
 }
-
+#pragma mark - 加个代理用于获取图片
+- (void)getImageFromFramebuffer:(nullable CVPixelBufferRef)pixelBuffer{
+    _pixelBuffer = pixelBuffer;
+}
 #pragma mark -- EncoderDelegate
 - (void)audioEncoder:(nullable id<LFAudioEncoding>)encoder audioFrame:(nullable LFAudioFrame *)frame {
     //<上传  时间戳对齐
